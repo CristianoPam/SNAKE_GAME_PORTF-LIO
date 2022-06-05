@@ -132,9 +132,9 @@ var m = 0;
 window.onload = alert("Terá 2 minutos para ganhar!")
 intervalo = window.setInterval(function () {
     let tempoHtml = document.querySelector(".tempo")
-    if (s == 60) { m++; s = 0; }
+    if (s == 120) { m++; s = 0; }
     s++;
-    if (m == 1) window.location.href = window.location.href, alert("Acabou o tempo")
+    if (m == 1) window.location.href = window.location.href, alert("Tempo esgotado!")
     tempoHtml.style.position = "absolute"
     tempoHtml.innerHTML = `Tempo: ${m}:${s}`
 }, 1000);
